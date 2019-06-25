@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Leaders_RentCar.Models.Referido>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.contrato.Referido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contrato1.ContratoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comision)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estatus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.contrato.Referido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contrato1.ContratoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comision)
+        </td>
+        <td class="bg label-danger" style="color: white">
+            @Html.DisplayFor(modelItem => item.Estatus)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.ReferidoId }) |
+            @Html.ActionLink("Pagado", "Delete", new { id = item.ReferidoId }, new { @class = "btn btn-success"})
+        </td>
+    </tr>
+}
+
+</table>

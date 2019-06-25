@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="leadersrentcarModelStoreContainer" CdmEntityContainer="leadersrentcarEntities3">
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="leadersrentcarModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehiculo">
+      <EntityTypeMapping TypeName="leadersrentcarModel.Vehiculo">
+        <MappingFragment StoreEntitySet="Vehiculo">
+          <ScalarProperty Name="VehiculoId" ColumnName="VehiculoId" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="Chasis" ColumnName="Chasis" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Clase" ColumnName="Clase" />
+          <ScalarProperty Name="Combustible" ColumnName="Combustible" />
+          <ScalarProperty Name="Kilometraje" ColumnName="Kilometraje" />
+          <ScalarProperty Name="Tarifa" ColumnName="Tarifa" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contrato">
+      <EntityTypeMapping TypeName="leadersrentcarModel.contrato">
+        <MappingFragment StoreEntitySet="contrato">
+          <ScalarProperty Name="Referido" ColumnName="Referido" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Tipo_Renta" ColumnName="Tipo_Renta" />
+          <ScalarProperty Name="Condiciones" ColumnName="Condiciones" />
+          <ScalarProperty Name="Fecha_Cierre" ColumnName="Fecha_Cierre" />
+          <ScalarProperty Name="Fecha_Inicio" ColumnName="Fecha_Inicio" />
+          <ScalarProperty Name="Contrato1" ColumnName="Contrato" />
+          <ScalarProperty Name="FormaPago" ColumnName="FormaPago" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Descuento_Comision" ColumnName="Descuento_Comision" />
+          <ScalarProperty Name="Dias_Extras" ColumnName="Dias_Extras" />
+          <ScalarProperty Name="Cantidad_Dias" ColumnName="Cantidad_Dias" />
+          <ScalarProperty Name="Kilometraje_Entrada" ColumnName="Kilometraje_Entrada" />
+          <ScalarProperty Name="Kilometraje_Salida" ColumnName="Kilometraje_Salida" />
+          <ScalarProperty Name="Combustible_Entrada" ColumnName="Combustible_Entrada" />
+          <ScalarProperty Name="Combustible_Salida" ColumnName="Combustible_Salida" />
+          <ScalarProperty Name="Clase" ColumnName="Clase" />
+          <ScalarProperty Name="FK_Vehiculo" ColumnName="FK_Vehiculo" />
+          <ScalarProperty Name="Licencia" ColumnName="Licencia" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ContratoId" ColumnName="ContratoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Referido">
+      <EntityTypeMapping TypeName="leadersrentcarModel.Referido">
+        <MappingFragment StoreEntitySet="Referido">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Comision" ColumnName="Comision" />
+          <ScalarProperty Name="FK_NumeroContrato" ColumnName="FK_NumeroContrato" />
+          <ScalarProperty Name="FK_Referido" ColumnName="FK_Referido" />
+          <ScalarProperty Name="ReferidoId" ColumnName="ReferidoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
